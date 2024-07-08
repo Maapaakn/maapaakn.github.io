@@ -22,7 +22,8 @@ body, html {
 #password-container {
     position: absolute;
     bottom: 20px;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     flex-direction: column;
