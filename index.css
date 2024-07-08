@@ -25,15 +25,27 @@ body, html {
     51%, 100% { content: "PLEASE"; }
 }
 
-.password {
+#password-container {
     position: absolute;
     bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.password {
     font-size: 1.5rem;
     cursor: pointer;
 }
 
 .hidden {
     display: none;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #secret-input {
@@ -43,3 +55,4 @@ body, html {
     border: none;
     border-radius: 5px;
 }
+
