@@ -17,12 +17,6 @@ body, html {
 
 .center-text {
     font-size: 3rem;
-    animation: alternateText 2s infinite;
-}
-
-@keyframes alternateText {
-    0%, 50% { content: "CRY"; }
-    51%, 100% { content: "PLEASE"; }
 }
 
 #password-container {
@@ -31,6 +25,8 @@ body, html {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .password {
@@ -55,4 +51,3 @@ body, html {
     border: none;
     border-radius: 5px;
 }
-
