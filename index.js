@@ -15,6 +15,7 @@ passwordElement.addEventListener('click', () => {
             clearInterval(interval);
             passwordElement.classList.add('hidden');
             inputContainer.classList.remove('hidden');
+            secretInput.focus();
         }
     }, 500); // Adjust the speed of the letter display here
 });
@@ -22,6 +23,12 @@ passwordElement.addEventListener('click', () => {
 function checkPhrase() {
     if (secretInput.value === phrase) {
         alert('Access Granted');  // Replace with actual logic for granting access
+    }
+}
+
+function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+        checkPhrase();
     }
 }
 
