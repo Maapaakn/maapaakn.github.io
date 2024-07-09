@@ -5,6 +5,7 @@ body, html {
     width: 100%;
     font-family: Arial, sans-serif;
     overflow: hidden;
+    background-color: #333; /* Fondo gris oscuro */
     position: relative;
 }
 
@@ -42,6 +43,23 @@ body, html {
     margin-bottom: 20px;
 }
 
+#link-container {
+    margin-top: 20px;
+}
+
+#dynamic-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+#dynamic-link:hover {
+    text-decoration: underline;
+}
+
 #password-container {
     position: absolute;
     bottom: 20px;
@@ -60,7 +78,7 @@ body, html {
 
 /* Clase para ocultar elementos */
 .hidden {
-    display: none !important;;
+    display: none !important;  /* Usamos !important para asegurar que no sea anulado */
 }
 
 #input-container {
