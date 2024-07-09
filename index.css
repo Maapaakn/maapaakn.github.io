@@ -79,7 +79,7 @@ body, html {
 .password {
     font-size: 1.1rem;
     cursor: pointer;
-    color: #fff;
+    color: #6c6c6c;
 }
 
 /* Clase para ocultar elementos */
@@ -98,7 +98,7 @@ body, html {
     font-size: 1rem;
     border: none;
     background: transparent;
-    color: #E7E7E7;
+    color: #6c6c6c;
     outline: none;
     border-bottom: 1px solid #888888;
     text-align: center;
