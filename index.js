@@ -2,7 +2,9 @@ const passwordElement = document.getElementById('password');
 const inputContainer = document.getElementById('input-container');
 const secretInput = document.getElementById('secret-input');
 const centerText = document.getElementById('center-text');
-const phrase = 'YOURPHRASE';  // Reemplaza esto con la frase que deseas mostrar
+const linkContainer = document.getElementById('link-container');
+const dynamicLink = document.getElementById('dynamic-link');
+const phrase = 'PRUEBA';  // Reemplaza esto con la frase que deseas mostrar
 let currentIndex = 0;
 let textToggle = true;
 
@@ -22,7 +24,7 @@ passwordElement.addEventListener('click', () => {
 
 function checkPhrase() {
     if (secretInput.value === phrase) {
-        alert('Access Granted');  // Reemplaza con la lógica actual para conceder acceso
+        linkContainer.classList.remove('hidden');  // Muestra el enlace dinámico
     }
 }
 
