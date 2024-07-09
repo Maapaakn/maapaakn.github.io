@@ -2,17 +2,19 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     font-family: Arial, sans-serif;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #333; /* Fondo gris oscuro */
+    position: relative;
 }
 
 /* Contenedor para el video de fondo */
 .video-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -29,6 +31,8 @@ body, html {
 
 .container {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .center-text {
