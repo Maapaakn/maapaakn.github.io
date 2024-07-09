@@ -2,7 +2,7 @@ const passwordElement = document.getElementById('password');
 const inputContainer = document.getElementById('input-container');
 const secretInput = document.getElementById('secret-input');
 const centerText = document.getElementById('center-text');
-const phrase = 'YOURPHRASE';  // Replace this with the phrase you want to show
+const phrase = 'YOURPHRASE';  // Reemplaza esto con la frase que deseas mostrar
 let currentIndex = 0;
 let textToggle = true;
 
@@ -17,12 +17,12 @@ passwordElement.addEventListener('click', () => {
             inputContainer.classList.remove('hidden');
             secretInput.focus();
         }
-    }, 500); // Adjust the speed of the letter display here
+    }, 500); // Ajusta la velocidad de la visualización de letras aquí
 });
 
 function checkPhrase() {
     if (secretInput.value === phrase) {
-        alert('Access Granted');  // Replace with actual logic for granting access
+        alert('Access Granted');  // Reemplaza con la lógica actual para conceder acceso
     }
 }
 
@@ -32,10 +32,10 @@ function handleKeyPress(event) {
     }
 }
 
-// Function to alternate text
+// Función para alternar texto
 function alternateText() {
     centerText.textContent = textToggle ? 'CRY' : 'PLEASE';
     textToggle = !textToggle;
 }
 
-setInterval(alternateText, 2000);  // Change text every 2 seconds
+setInterval(alternateText, 2000);  // Cambia el texto cada 2 segundos
