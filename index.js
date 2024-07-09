@@ -20,7 +20,7 @@ passwordElement.addEventListener('click', () => {
             inputContainer.classList.add('fade-in');
             
         }
-    }, 2200); // Ajusta la velocidad de la visualización de letras aquí
+    }, 1500); // Ajusta la velocidad de la visualización de letras aquí
 });
 
 function checkPhrase() {
