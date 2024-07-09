@@ -10,6 +10,23 @@ body, html {
     background-color: #333; /* Fondo gris oscuro */
 }
 
+/* Contenedor para el video de fondo */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .container {
     text-align: center;
 }
@@ -36,6 +53,7 @@ body, html {
     color: #fff;
 }
 
+/* Clase para ocultar elementos */
 .hidden {
     display: none;
 }
