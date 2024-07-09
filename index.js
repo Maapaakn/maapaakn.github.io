@@ -36,7 +36,7 @@ function handleKeyPress(event) {
 
 // Función para alternar texto
 function alternateText() {
-    centerText.textContent = textToggle ? 'CRY' : 'PLEASE';
+    centerText.textContent = textToggle ? 'cry' : 'please';
     textToggle = !textToggle;
 }
 
