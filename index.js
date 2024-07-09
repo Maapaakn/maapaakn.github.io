@@ -4,7 +4,7 @@ const secretInput = document.getElementById('secret-input');
 const centerText = document.getElementById('center-text');
 const linkContainer = document.getElementById('link-container');
 const dynamicLink = document.getElementById('dynamic-link');
-const phrase = 'PRUEBA';  // Reemplaza esto con la frase que deseas mostrar
+const phrase = 'sier';  // Reemplaza esto con la frase que deseas mostrar
 let currentIndex = 0;
 let textToggle = true;
 
@@ -17,7 +17,7 @@ passwordElement.addEventListener('click', () => {
             clearInterval(interval);
             passwordElement.classList.add('hidden');
             inputContainer.classList.remove('hidden');
-            secretInput.focus();
+            
         }
     }, 500); // Ajusta la velocidad de la visualización de letras aquí
 });
@@ -40,4 +40,4 @@ function alternateText() {
     textToggle = !textToggle;
 }
 
-setInterval(alternateText, 2000);  // Cambia el texto cada 2 segundos
+setInterval(alternateText, 3000);  // Cambia el texto cada 3 segundos
