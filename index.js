@@ -17,6 +17,7 @@ passwordElement.addEventListener('click', () => {
             clearInterval(interval);
             passwordElement.classList.add('hidden');
             inputContainer.classList.remove('hidden');
+            inputContainer.classList.add('fade-in');
             
         }
     }, 2200); // Ajusta la velocidad de la visualización de letras aquí
