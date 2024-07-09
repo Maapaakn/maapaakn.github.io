@@ -19,7 +19,7 @@ passwordElement.addEventListener('click', () => {
             inputContainer.classList.remove('hidden');
             
         }
-    }, 500); // Ajusta la velocidad de la visualización de letras aquí
+    }, 2200); // Ajusta la velocidad de la visualización de letras aquí
 });
 
 function checkPhrase() {
@@ -40,4 +40,4 @@ function alternateText() {
     textToggle = !textToggle;
 }
 
-setInterval(alternateText, 3000);  // Cambia el texto cada 3 segundos
+setInterval(alternateText, 4000);  // Cambia el texto cada 3 segundos
